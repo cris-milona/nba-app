@@ -1,0 +1,151 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.6;
+  background-color: #142b4b;
+  /* background-color: #1d428a; */
+
+  color: aliceblue;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+a:link,
+a:active,
+a:visited {
+  color: currentColor;
+}
+
+p {
+  font-size: 1.6rem;
+}
+
+h1 {
+  font-size: 4.5rem;
+  line-height: 1.2;
+}
+
+/*overall container*/
+.container {
+  border: aliceblue solid 2px;
+}
+/*instructions section*/
+.instructions {
+  border: aliceblue solid 2px;
+}
+
+.img-container {
+  /* width: 25%;
+  padding: 2em 0; */
+}
+.heading {
+  /* margin-bottom: 2rem; */
+}
+.text {
+  /* line-height: 1.5; */
+}
+.limitations {
+}
+.limitations li img {
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  filter: invert(100%) sepia(81%) saturate(1759%) hue-rotate(178deg)
+    brightness(106%) contrast(109%);
+}
+.label {
+}
+.input {
+  width: 6em;
+  padding: 0.5em 1em;
+  border: none;
+  border-radius: 2rem;
+}
+
+.btn {
+  display: block;
+
+  justify-self: end;
+
+  border: 0.3rem solid transparent;
+  border-color: aliceblue;
+  border-radius: 3rem;
+  padding: 0.7rem 2rem;
+
+  font-weight: 600;
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: aliceblue;
+  background-color: transparent;
+}
+
+.btn:hover {
+  color: #142b4b;
+  border-color: #142b4b;
+  background-color: aliceblue;
+}
+/*results section*/
+.results {
+}
+.squad-card {
+}
+.position {
+}
+.position--pg {
+}
+.position--sg {
+}
+.position--pf {
+}
+.position--sf {
+}
+.position--c {
+}
+
+.players {
+}
+.players--pg {
+}
+.players--sg {
+}
+.players--pf {
+}
+.players--sf {
+}
+.players--c {
+}
+
+.squad-info {
+}
+.squad-info span {
+}
+.budget {
+}
+.points {
+}
+.games {
+}
