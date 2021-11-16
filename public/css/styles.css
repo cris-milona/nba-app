@@ -13,11 +13,11 @@ html {
 body {
   box-sizing: border-box;
   font-family: 'Montserrat', sans-serif;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 1.6rem;
   line-height: 1.6;
+  letter-spacing: 0.5px;
   background-color: #142b4b;
-  /* background-color: #1d428a; */
 
   color: aliceblue;
 }
@@ -27,8 +27,9 @@ img {
   max-width: 100%;
 }
 
-li {
-  list-style: none;
+li::marker {
+  color: aliceblue;
+  font-size: 2rem;
 }
 
 a {
@@ -40,112 +41,155 @@ a:visited {
   color: currentColor;
 }
 
-p {
-  font-size: 1.6rem;
+/*main*/
+.main {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding-bottom: 3em;
 }
 
-h1 {
-  font-size: 4.5rem;
-  line-height: 1.2;
-}
-
-/*overall container*/
-.container {
-  border: aliceblue solid 2px;
-}
 /*instructions section*/
 .instructions {
-  border: aliceblue solid 2px;
+  width: 90%;
+  margin: 0 auto;
 }
 
 .img-container {
-  /* width: 25%;
-  padding: 2em 0; */
+  width: 35%;
+  margin-left: auto;
+  padding-top: 2em;
 }
+
 .heading {
-  /* margin-bottom: 2rem; */
+  font-size: 3rem;
+  line-height: 1.2;
+  margin-bottom: 1em;
 }
-.text {
-  /* line-height: 1.5; */
+
+.description {
+  margin-bottom: 0.5em;
 }
-.limitations {
+
+.limitations-list {
+  margin: 0 0 2em 1em;
 }
-.limitations li img {
-  display: inline-block;
-  width: 2rem;
-  height: 2rem;
-  filter: invert(100%) sepia(81%) saturate(1759%) hue-rotate(178deg)
-    brightness(106%) contrast(109%);
+
+.input-container {
+  text-align: end;
 }
-.label {
-}
+
 .input {
   width: 6em;
   padding: 0.5em 1em;
   border: none;
   border-radius: 2rem;
+
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+.input:focus,
+.btn:focus {
+  outline-color: #c14a09;
 }
 
 .btn {
   display: block;
+  margin: 1.25em 0 1.25em auto;
 
-  justify-self: end;
-
-  border: 0.3rem solid transparent;
-  border-color: aliceblue;
+  border: 0.3rem solid aliceblue;
   border-radius: 3rem;
   padding: 0.7rem 2rem;
 
   font-weight: 600;
-  font-size: 1.5rem;
+  font-size: inherit;
+  letter-spacing: inherit;
   text-decoration: none;
   color: aliceblue;
   background-color: transparent;
+
+  cursor: pointer;
+
+  transition: all 0.2s;
 }
 
-.btn:hover {
+.btn:hover,
+.btn:focus,
+.btn:active {
   color: #142b4b;
-  border-color: #142b4b;
   background-color: aliceblue;
 }
+
 /*results section*/
 .results {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.25em;
+
+  width: 90%;
+  margin: 0 auto;
 }
 .squad-card {
+  padding: 0.5em;
+  color: #142b4b;
+
+  border-radius: 15px;
+  background-color: aliceblue;
 }
+
 .position {
-}
-.position--pg {
-}
-.position--sg {
-}
-.position--pf {
-}
-.position--sf {
-}
-.position--c {
+  font-weight: 700;
+  color: #c14a09;
 }
 
 .players {
-}
-.players--pg {
-}
-.players--sg {
-}
-.players--pf {
-}
-.players--sf {
-}
-.players--c {
+  margin-bottom: 0.5em;
+
+  font-size: 1.8rem;
 }
 
 .squad-info {
+  display: flex;
+  gap: 0.5em;
+
+  padding-top: 1em;
+  font-size: 1.8rem;
+  font-weight: 500;
 }
-.squad-info span {
-}
+
 .budget {
+  margin-right: 0.75em;
 }
-.points {
-}
+
 .games {
+  margin-right: 0.75em;
+}
+
+/* Media queries */
+@media screen and (min-width: 43.75em) {
+  body {
+    font-size: 1.8rem;
+  }
+  .heading {
+    font-size: 4.5rem;
+  }
+}
+
+@media screen and (min-width: 56.25em) {
+  .img-container {
+    width: 25%;
+  }
+}
+
+@media screen and (min-width: 81.25em) {
+  body {
+    font-size: 2rem;
+  }
+  .heading {
+    font-size: 6rem;
+  }
+
+  .img-container {
+    width: 20%;
+  }
 }
