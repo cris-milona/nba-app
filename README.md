@@ -1,3 +1,5 @@
+⚠️ This is an early-career project (2021–2022). It is not actively maintained and may contain outdated practices or vulnerabilities. It is preserved for portfolio/history purposes.
+
 The current project was created by Kostas Christou (https://github.com/26fromthebar) and Christina Milona (https://github.com/cris-milona) and it is an attempt to create an NBA lineup optimizer that can be used in a particular NBA fantasy setup. The lineup must contain one center, two power forwards, two small forwards, two shooting guards and two point guards but cannot contain more than two players from the same NBA team. Every NBA player is given a salary and every user has a maximum budget to spend to acquire players.
 
 The user provides a budget for the squad and the application generates all possible 9-player squads, listed from the best to the worst one, that do not exceed this budget.
